@@ -23,4 +23,5 @@ function addTweet() {
   let t = template(tweet.value)
   const fragment = document.createRange().createContextualFragment(t);
   draftTweet.after(fragment)
+  tweet.value = ""
 }
