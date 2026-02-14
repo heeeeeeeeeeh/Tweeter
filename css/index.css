@@ -36,6 +36,20 @@ main {
   }
 }
 
+#tweets {
+  height: fit-content;
+}
+
+.tweet {
+  height: fit-content;
+  max-height: 25vh;
+}
+
+.userProfile {
+  width: 3vw;
+  height: 3vw;
+}
+
 textarea {
   background-color: inherit;
   resize: none !important;
