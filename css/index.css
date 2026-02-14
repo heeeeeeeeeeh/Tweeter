@@ -26,14 +26,9 @@ textarea {
 #draftTweetButton {
   background-color: #2595eb;
   color: white;
-  font-weight: bold;
   border-radius: 99999px;
   border: none;
   padding: 0.3vw 1vw;
-}
-
-.tweetUserName {
-  font-weight: bold;
 }
 
 .tweetUserId {
