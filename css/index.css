@@ -2,12 +2,24 @@ body {
   overflow-x: hidden;
 }
 
-main {
-  background-color: #2595eb1a;
+.text-primary {
+  color: white !important;
 }
 
-.header-name {
-  color: #2595eb;
+.text-secondary {
+  color: #2595eb !important;
+}
+
+.text-dark {
+  color: gray !important;
+}
+
+.bg-primary {
+  background-color: #2595eb !important;
+}
+
+main {
+  background-color: #2595eb1a;
 }
 
 nav {
@@ -27,16 +39,4 @@ main {
 textarea {
   background-color: inherit;
   resize: none !important;
-}
-
-#draftTweetButton {
-  background-color: #2595eb;
-  color: white;
-  border-radius: 99999px;
-  border: none;
-  padding: 0.3vw 1vw;
-}
-
-.tweetUserId {
-  color: gray;
 }
