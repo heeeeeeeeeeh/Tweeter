@@ -1,7 +1,10 @@
-window.onload = () => {
-  let tweet = document.getElementById("tweetInput")
+import template from "./template.js"
+let tweet = document.getElementById("tweetInput")
 
+window.onload = () => {
+  let tweetSubmit = document.getElementById("draftTweetButton")
   tweet.oninput = updateCharRem
+  tweetSubmit.onclick = addTweet
 }
 
 function updateCharRem(e) {
@@ -13,4 +16,11 @@ function updateCharRem(e) {
   } else {
     charRem.innerHTML = (160 - tweetText.length)
   }
+}
+
+function addTweet() {
+  let draftTweet = document.getElementById("draftTweet")
+  let t = template(tweet.value)
+  const fragment = document.createRange().createContextualFragment(t);
+  draftTweet.after(fragment)
 }
