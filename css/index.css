@@ -18,6 +18,12 @@ main {
   height: 90%;
 }
 
+@media (max-width: 576px) {
+  .rounded-0-sm {
+    border-radius: 0px !important;
+  }
+}
+
 textarea {
   background-color: inherit;
   resize: none !important;
