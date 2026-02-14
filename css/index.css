@@ -40,6 +40,10 @@ main {
   height: fit-content;
 }
 
+#draftTweet {
+  border-bottom: solid #2595eb1a 2px;
+}
+
 .tweet {
   height: fit-content;
   max-height: 25vh;
