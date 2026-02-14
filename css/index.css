@@ -56,5 +56,6 @@ main {
 
 textarea {
   background-color: inherit;
-  resize: none !important;
+  resize: none;
+  field-sizing: content;
 }
