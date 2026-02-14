@@ -1,0 +1,34 @@
+body {
+  overflow-x: hidden;
+}
+
+main {
+  background-color: #dee2e9;
+}
+
+.header-name {
+  color: #2595eb;
+  font-weight: bold;
+  font-size: 150%;
+}
+
+nav {
+  height: 10%;
+}
+
+main {
+  height: 90%;
+}
+
+textarea {
+  background-color: inherit;
+  resize: none !important;
+}
+
+.tweetUserName {
+  font-weight: bold;
+}
+
+.tweetUserId {
+  color: gray;
+}
