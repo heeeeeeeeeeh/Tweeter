@@ -38,6 +38,7 @@ main {
 
 #tweets {
   height: fit-content;
+  overflow-y: hidden;
 }
 
 #draftTweet {
