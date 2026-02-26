@@ -1,9 +1,9 @@
 import template from "./template.js"
 let tweet = document.getElementById("tweetInput")
 let charRem = document.getElementById("charRemainingNum")
+let tweetSubmit = document.getElementById("draftTweetButton")
 
 window.onload = () => {
-  let tweetSubmit = document.getElementById("draftTweetButton")
   tweet.oninput = updateCharRem
   tweetSubmit.onclick = addTweet
 }
@@ -13,7 +13,9 @@ function updateCharRem(e) {
   if (tweetText.length > 160) {
     e.target.value = tweetText.substring(0, 160);
     charRem.innerHTML = 0
+    tweetSubmit.setAttribute("disabled", "")
   } else {
+    tweetSubmit.removeAttribute("disabled")
     charRem.innerHTML = (160 - tweetText.length)
   }
 }
