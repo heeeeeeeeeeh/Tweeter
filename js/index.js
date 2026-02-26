@@ -10,7 +10,7 @@ window.onload = () => {
 
 function updateCharRem(e) {
   let tweetText = e.target.value;
-  if (tweetText.length > 160) {
+  if (tweetText.length >= 160) {
     e.target.value = tweetText.substring(0, 160);
     charRem.innerHTML = 0
     tweetSubmit.setAttribute("disabled", "")
